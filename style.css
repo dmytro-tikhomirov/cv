@@ -1,0 +1,416 @@
+        :root {
+            --bg: #e3eed4;
+            --card: #aec3b0;
+            --text: #375534;
+            --title: #0f2a1d;
+            --accent: #6b9071;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Inter, system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            min-height: 100vh;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, .08);
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--title);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .summary {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #c9d7c4;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--title);
+        }
+
+        .company {
+            font-weight: 500;
+            color: var(--accent);
+        }
+
+        .duration {
+            font-style: italic;
+            color: #6b9071;
+            font-size: 0.9rem;
+            text-align: right;
+        }
+        .duration-total {
+            display: block;           
+        }
+
+        .tools {
+            background: var(--card);
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+
+        .responsibilities {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+
+        .responsibilities li {
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .responsibilities li:before {
+            content: "▸";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem; 
+            line-height: 1;     
+            top: -0.3rem; 
+        }
+
+        .skills-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: var(--card);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .skill-category h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--title);
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #d8e5d3;
+            color: var(--text);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .education-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .qualification {
+            font-weight: 600;
+            color: var(--title);
+        }
+
+        .university {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .education-duration{
+            font-style: italic;
+            color: #6b9071;
+            font-size: 0.9rem;
+        }
+
+        .responsibilities-list {
+            list-style: none;
+        }
+
+        .responsibilities-list li {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: var(--card);
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .responsibilities-title {
+            font-weight: 600;
+            color: var(--title);
+            margin-bottom: 0.3rem;
+        }
+
+        .header {
+            padding: 3rem 2rem;
+            text-align: center;
+            color: var(--bg);
+            border-radius: 0 0 2rem 2rem;
+            background:
+                radial-gradient(circle at 25% 25%, rgba(107,144,113,0.6), transparent 40%),
+                radial-gradient(circle at 75% 15%, rgba(180,220,180,0.4), transparent 50%),
+                linear-gradient(135deg, #0f2a1d, #3b6b4b, #123c2f);
+                background-blend-mode: overlay;
+        }
+
+        .header-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .photo {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid rgba(255, 255, 255, .9);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+        }
+
+        .header-text {
+            max-width: 520px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.4rem;
+            color: var(--bg);
+        }
+
+        .title {
+            color: var(--bg);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 1.05rem;
+            margin-top: .4rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: .8rem;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .contact-info a,
+        .email-box {
+            background: rgba(255, 255, 255, .85);
+            padding: 10px 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, .35);
+            font-weight: 600;
+            color: var(--title);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+            transition: all .25s ease;
+        }
+
+        .email-box {
+            padding: 8px 16px!important;
+        }
+
+        .contact-info a:hover {
+            background: rgba(107, 144, 113, .20);
+            border-color: rgba(107, 144, 113, .55);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(107, 144, 113, .25);
+            color: var(--card);
+        }
+
+        .email-box button {
+            border: none;
+            background: var(--accent);
+            border-radius: 50%;
+            padding: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .2s ease;
+        }
+
+        .email-box button:hover {
+            background: #5e8468;
+            transform: translateY(-1px);
+        }
+
+        .email-box svg {
+            width: 14px;
+            height: 14px;
+            fill: white;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 14px 26px;
+            border-radius: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--bg);
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--accent), var(--card));
+            box-shadow: 0 10px 30px rgba(107, 144, 113, .4);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(107, 144, 113, .55);
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: var(--title);
+            color: var(--bg);
+            padding: 12px 18px;
+            border-radius: 12px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: .3s ease;
+            z-index: 999;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2.1rem;
+            }
+
+            .header{
+                border-radius: 0 0 0.5rem 0.5rem;
+            }
+
+            .photo {
+                width: 140px;
+                height: 140px;
+            }
+
+            .contact-info {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .download-btn {
+                width: 50%;
+                text-align: center;
+            }
+
+            .content {
+                padding: 2rem 1.4rem;
+            }
+            
+            .duration {
+                padding-top: 0.2rem;
+            }
+
+            .duration-total {
+                text-align: left;
+            }
+
+            .company {
+                padding-top: 0.2rem;
+            }
+        }
+
+        /* TABLET */
+        @media (max-width: 900px) {
+            .header {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 2.3rem;
+            }
+
+            .photo {
+                width: 150px;
+                height: 150px;
+            }
+
+            .content {
+                padding: 2rem 1.6rem;
+            }
+        }
+
+        /* LAPTOP */
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 1000px;
+            }
+
+            .header {
+                padding: 2.8rem 2rem;
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .content {
+                padding: 2rem 1.8rem;
+            }
+        }
